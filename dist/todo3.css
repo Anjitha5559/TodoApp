@@ -1,0 +1,237 @@
+:root{
+    --bordrad : 10px;
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    background-image: url(bg.jpg);
+    overscroll-behavior:none;
+}
+#header{
+    background-color: #28125c;
+    border:1%;
+    display: flex;
+    flex-direction: row;
+    height:10vh;
+    width:100vw;
+    justify-content: space-between;
+    font-size:150%;
+    color: antiquewhite;
+    align-items: center;
+}
+#datetime{
+ font-size: 150%;
+ padding-left: 2vw;
+}
+#tasksheading{
+    font-size:300%;
+}
+#login{
+    cursor: pointer;
+    padding-right: 2vw;
+}
+#login:hover{
+    color: rgb(218, 192, 158);
+}
+#body{
+
+    height:90vh;
+    width:70vw;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+}
+#form{
+    display: flex;
+    flex-direction: row;
+    height:6.5vh;
+    justify-content: space-around;
+    padding-top: 5vh;
+    padding-bottom:5vh;
+    background-color:rgb(0, 0, 0);
+    margin-top:1.5vh;
+    margin-bottom:1.5vh;
+    border-radius:10px;
+}
+#taskinp{
+    border-radius: 10px;
+    width:40vw;
+    font-size:150%;
+    padding-left: 1%;
+    background-color: rgb(219, 217, 217);
+}
+#taskinp:active{
+    background-color: #b5b8b7;
+}
+#timeinp{
+    width:15vw;
+    border-radius: 8px;
+    background-color: rgb(219, 217, 217);
+    padding-left: 1%;
+    font-size:150%;
+}
+.btn{
+    width:4vw;
+    border-radius: 10px;
+    background-color: #04AA6D;
+    cursor: pointer;
+    box-shadow: 0 5px #999;
+    font-size:100%;
+    font-weight: bold;
+
+}
+.btn:hover{
+    background-color:#3e8e41;
+    width:4.1vw;
+
+} 
+.btn:active {
+    background-color: #3e8e41;
+    box-shadow: 0 9px #666;
+    transform: translateY(4px);
+}
+#entries{
+    font-size: 180%;
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+    overflow: scroll;
+}
+#today{
+    background-color:rgb(61, 11, 11);
+}
+#tomorrow{
+    background-color: rgb(75, 52, 10);
+}
+#ThisWeek{
+    background-color: #47125c;
+}
+#ThisMonth{
+    background-color: #00320b;
+}
+#Somedays{
+    background-color: #6d6e1f;
+}
+#entry{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding:1%;
+}
+#button{
+    background-color: rgb(151, 42, 42);
+    border-radius:5px;
+    cursor: pointer;
+    box-shadow: 0 5px rgb(175, 98, 98);
+    height:4vh;
+    height:2vh;
+    line-height:2vh;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size:80%;
+}
+.button:hover{
+    background-color: rgb(109, 32, 32);
+    border-radius:8px;
+}
+.button:active {
+    background-color: #d62828;
+    box-shadow: 0 3px rgb(138, 87, 87);
+    transform: translateY(4px);
+  }
+.timestamp{
+    text-align: center;
+    margin-bottom:2vh;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:10px;
+}
+.todoitem{
+    width: 90%;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom:0.5vh;
+    height:4.5vh;
+    line-height:4.5vh;
+    margin-top: 0.5vh;
+    text-align: left;
+    padding-right: 2%;
+    border-radius: 10px;
+    
+}
+.todoitem :nth-child(1){
+    width: 60%;
+    padding-left: 10px;
+}
+.todoitem :nth-child(2){
+    width:30%;
+}
+.todoitem :nth-child(3){
+    width: 5%;
+    padding-right: 10px;
+    text-align: center;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+@media screen and (max-width: 1200px){
+    .todoitem{
+        font-size: 80%;
+        }
+    .btn{
+        width:4vw;
+   
+        font-size:100%;
+    }
+
+}
+@media screen and (max-width: 900px){
+    .todoitem{
+        font-size: 80%;
+        }
+    .btn{
+        width:7vw;
+   
+        font-size:90%;
+    }
+    #body{
+        width: 80vw;
+    }
+
+}
+@media screen and (max-width: 600px){
+    .btn{
+        width:8vw;
+        font-size:90%;
+    }
+    #body{
+        width: 90vw;
+    }
+    .todoitem{
+      
+        font-size: 80%;
+        
+    }
+    #taskinp{
+        width:50vw;
+    }
+    #timeinp{
+        width:20vw;
+    }
+    #tasksheading{
+        font-size:200%;
+    }
+    #datetime{
+        font-size: 130%;
+       }
+
+}
+
